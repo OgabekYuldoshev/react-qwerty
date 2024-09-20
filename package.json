@@ -1,0 +1,41 @@
+{
+  "name": "react-qwerty",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "format": "biome format --write ./src",
+    "lint": "biome lint --write ./src",
+    "check": "biome check --write ./src",
+    "preview": "vite preview"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "yarn lint && yarn format"
+  },
+  "dependencies": {
+    "@tiptap/core": "^2.7.2",
+    "@tiptap/pm": "^2.7.2",
+    "@tiptap/react": "^2.7.2",
+    "@tiptap/starter-kit": "^2.7.2",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "constate": "^3.3.2",
+    "lucide-react": "^0.441.0",
+    "modern-normalize": "^3.0.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.2",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "sass": "^1.79.2",
+    "simple-git-hooks": "^2.11.1",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^8.0.1",
+    "vite": "^5.4.1"
+  }
+}

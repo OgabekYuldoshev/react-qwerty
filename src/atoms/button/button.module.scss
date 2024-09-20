@@ -1,0 +1,26 @@
+.base {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+    color: var(--color);
+
+    &:hover:not([disabled]) {
+        background-color: rgb(244 244 245);
+    }
+
+
+    &--active {
+        background-color: rgb(228 228 231);
+    }
+
+    &--disabled {
+        cursor: not-allowed;
+    }
+}
