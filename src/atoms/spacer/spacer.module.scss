@@ -1,5 +1,16 @@
 .base {
-    width: 1px;
-    height: 100%;
-    border: 1px solid red;
+    display: block;
+    margin: 0 0.3em;
+
+    &--x {
+        width: var(--size, 10px);
+        height: 1px;
+        border-bottom: 1px solid var(--border);
+    }
+
+    &--y {
+        width: 1px;
+        height: var(--size, 10px);
+        border-right: 1px solid var(--border);
+    }
 }

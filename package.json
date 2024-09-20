@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@tiptap/core": "^2.7.2",
+    "@tiptap/extension-placeholder": "^2.7.2",
     "@tiptap/pm": "^2.7.2",
     "@tiptap/react": "^2.7.2",
     "@tiptap/starter-kit": "^2.7.2",

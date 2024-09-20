@@ -10,7 +10,7 @@ export const useEditor = ({ ...props }: EditorProps) => {
 	const editor = useTipTapEditor(props);
 
 	if (!editor) {
-		console.error(["[react-qwerty]: Editor is not available!"]);
+		throw new Error("[react-qwerty]: Editor is not available!");
 	}
 
 	return { editor };
