@@ -1565,23 +1565,6 @@ react-dom@^18.3.1:
     loose-envify "^1.1.0"
     scheduler "^0.23.2"
 
-react-qwerty@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/react-qwerty/-/react-qwerty-0.0.1.tgz#582d85db7ae68a69943aa0c2db458d8cadcf55e5"
-  integrity sha512-rShyjXFQyMqk+mKw3P4sMMzdW9jzN6Vz3CUNE17T8cmikLvUwq2s7vUVpjijKOg2fYGRCGCVyCVGiMlnHm8KTA==
-  dependencies:
-    "@tiptap/core" "^2.7.2"
-    "@tiptap/extension-placeholder" "^2.7.2"
-    "@tiptap/pm" "^2.7.2"
-    "@tiptap/react" "^2.7.2"
-    "@tiptap/starter-kit" "^2.7.2"
-    clsx "^2.1.1"
-    constate "^3.3.2"
-    lucide-react "^0.441.0"
-    modern-normalize "^3.0.1"
-    react "^18.3.1"
-    react-dom "^18.3.1"
-
 react@^18.3.1:
   version "18.3.1"
   resolved "https://registry.yarnpkg.com/react/-/react-18.3.1.tgz#49ab892009c53933625bd16b2533fc754cab2891"

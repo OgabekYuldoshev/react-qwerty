@@ -1,11 +1,9 @@
 import "./assets/index.scss";
 
-import "react-qwerty/react-qwerty.css";
-
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
-import { ReactQwerty } from "react-qwerty";
+import { ReactQwerty } from "./editor";
 
 function App() {
   return (

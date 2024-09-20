@@ -5,14 +5,14 @@ import { Content } from "../content";
 import { Toolbar } from "../toolbar";
 
 const Provider = () => {
-  return (
-    <EditorProvider autofocus extensions={defaultExtension}>
-      <Container>
-        <Toolbar />
-        <Content />
-      </Container>
-    </EditorProvider>
-  );
+	return (
+		<EditorProvider autofocus extensions={defaultExtension}>
+			<Container>
+				<Toolbar />
+				<Content />
+			</Container>
+		</EditorProvider>
+	);
 };
 
 export default Provider;
