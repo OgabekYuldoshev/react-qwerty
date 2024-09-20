@@ -1,15 +1,36 @@
 {
   "name": "react-qwerty",
-  "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
+  "files": [
+    "lib"
+  ],
+  "main": "./lib/react-qwerty.cjs",
+  "module": "./lib/react-qwerty.js",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./lib/index.d.ts",
+        "default": "./lib/react-qwerty.js"
+      },
+      "require": {
+        "types": "./lib/index.d.cts",
+        "default": "./lib/react-qwerty.cjs"
+      }
+    },
+    "./globals.css": {
+      "import": "./lib/style.css",
+      "require": "./lib/style.css"
+    }
+  },
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "dev": "vite --config vite.config.web.ts",
+    "build:web": "tsc -b && vite build --config vite.config.web.ts",
+    "build:lib": "vite build --config vite.config.lib.ts",
     "format": "biome format --write ./src",
     "lint": "biome lint --write ./src",
-    "check": "biome check --write ./src",
-    "preview": "vite preview"
+    "check": "biome check --write ./src"
   },
   "simple-git-hooks": {
     "pre-commit": "yarn lint && yarn format"
@@ -20,13 +41,13 @@
     "@tiptap/pm": "^2.7.2",
     "@tiptap/react": "^2.7.2",
     "@tiptap/starter-kit": "^2.7.2",
-    "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "constate": "^3.3.2",
     "lucide-react": "^0.441.0",
     "modern-normalize": "^3.0.1",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-qwerty": "^0.0.1"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.2",
@@ -37,6 +58,7 @@
     "simple-git-hooks": "^2.11.1",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
-    "vite": "^5.4.1"
+    "vite": "^5.4.1",
+    "vite-plugin-dts": "^4.2.1"
   }
 }

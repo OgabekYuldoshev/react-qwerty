@@ -1,5 +1,5 @@
 import { useEditorContext } from "../../hooks/useEditor";
-import { baseToolbar } from "../../lib/constants";
+import { baseToolbar } from "../../utils/constants";
 import { Spacer } from "../spacer";
 import styles from "./toolbar.module.scss";
 
