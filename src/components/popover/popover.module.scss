@@ -1,0 +1,42 @@
+.base {
+    display: block;
+
+    &Content {
+        display: block;
+        background: rgb(var(--background));
+        border: 1px solid rgb(var(--border));
+        border-radius: 6px;
+        padding: 0.5em;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+        &[data-state=open] {
+            animation: popover-open .1s ease-in-out;
+        }
+
+        &[data-state=closed] {
+            animation: popover-closed .1s ease-in-out;
+        }
+    }
+}
+
+
+@keyframes popover-open {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes popover-closed {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

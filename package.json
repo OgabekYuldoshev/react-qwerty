@@ -37,8 +37,14 @@
     "pre-push": "yarn format"
   },
   "dependencies": {
+    "@radix-ui/react-popover": "^1.1.1",
+    "@radix-ui/react-slot": "^1.1.0",
     "@tiptap/core": "^2.7.2",
     "@tiptap/extension-placeholder": "^2.7.2",
+    "@tiptap/extension-table": "^2.7.2",
+    "@tiptap/extension-table-cell": "^2.7.2",
+    "@tiptap/extension-table-header": "^2.7.2",
+    "@tiptap/extension-table-row": "^2.7.2",
     "@tiptap/pm": "^2.7.2",
     "@tiptap/react": "^2.7.2",
     "@tiptap/starter-kit": "^2.7.2",

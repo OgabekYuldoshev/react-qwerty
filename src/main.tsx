@@ -4,7 +4,6 @@ import { StrictMode, useState } from "react";
 import { createRoot } from "react-dom/client";
 
 import { ReactQwerty } from "./editor";
-
 function App() {
 	const [mode, setMode] = useState<"light" | "dark">("light");
 	return (

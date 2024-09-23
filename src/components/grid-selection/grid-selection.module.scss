@@ -1,0 +1,35 @@
+.base {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &Grid {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    &Row {
+        display: flex;
+        gap: 2px;
+    }
+
+    &Col {
+        border-radius: 2px;
+        width: 1em;
+        height: 1em;
+        border: 1px solid rgb(203 213 225);
+        transition: .1s ease-in-out;
+
+        &--active {
+            background: rgb(2 6 23);
+        }
+    }
+
+    &Footer {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
