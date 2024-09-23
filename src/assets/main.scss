@@ -6,13 +6,13 @@
 
     --border: 226 232 240;
 
-    .dark {
+    .react-qwerty--dark {
         --background: 15 23 42;
         --color: 248 250 252;
 
         --btn-hover: 51 65 85;
 
-        --border: 226 232 240;
+        --border: 71 85 105;
     }
 }
 
@@ -30,6 +30,7 @@
             float: left;
             height: 0;
             pointer-events: none;
+            font-style: italic;
         }
 
         hr {

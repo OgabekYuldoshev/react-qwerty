@@ -4,15 +4,19 @@ import { Container } from "../container";
 import { Content } from "../content";
 import { Toolbar } from "../toolbar";
 
-const Provider = () => {
-	return (
-		<EditorProvider autofocus extensions={defaultExtension}>
-			<Container>
-				<Toolbar />
-				<Content />
-			</Container>
-		</EditorProvider>
-	);
+type ReactQwertyProps = {
+  mode?: "dark" | "light";
+};
+
+const Provider = ({ mode }: ReactQwertyProps) => {
+  return (
+    <EditorProvider autofocus extensions={defaultExtension}>
+      <Container mode={mode}>
+        <Toolbar />
+        <Content />
+      </Container>
+    </EditorProvider>
+  );
 };
 
 export default Provider;
