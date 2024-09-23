@@ -20,8 +20,15 @@
     color: rgb(var(--color));
 
     .tiptap {
-        padding: 1em 2em;
+        padding: 2em;
 
+        :first-child {
+            margin-top: 0;
+        }
+
+        :last-child {
+            margin-bottom: 0;
+        }
 
         &:focus {
             outline: none;
@@ -40,5 +47,4 @@
             border-color: rgb(var(--border));
         }
     }
-
 }
