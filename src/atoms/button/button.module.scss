@@ -12,12 +12,12 @@
     color: var(--color);
 
     &:hover:not([disabled]) {
-        background-color: rgb(244 244 245);
+        background-color: rgb(var(--btn-hover));
     }
 
 
     &--active {
-        background-color: rgb(228 228 231);
+        background-color: rgb(var(--btn-hover));
     }
 
     &--disabled {

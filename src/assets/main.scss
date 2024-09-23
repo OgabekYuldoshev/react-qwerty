@@ -1,17 +1,23 @@
 :root {
-    --background: rgb(255, 255, 255);
-    --color: rgb(9 9 11);
+    --background: 255, 255, 255;
+    --color: 30 41 59;
 
-    --border: rgb(228 228 231);
+    --btn-hover: 226 232 240;
+
+    --border: 226 232 240;
 
     .dark {
-        --background: rgb(9 9 11);
-        --color: rgb(250 250 250);
+        --background: 15 23 42;
+        --color: 248 250 252;
+
+        --btn-hover: 51 65 85;
+
+        --border: 226 232 240;
     }
 }
 
 .react-qwerty {
-    color: var(--color);
+    color: rgb(var(--color));
 
     .tiptap {
         &:focus {
@@ -27,7 +33,7 @@
         }
 
         hr {
-            border-color: var(--border);
+            border-color: rgb(var(--border));
         }
     }
 
