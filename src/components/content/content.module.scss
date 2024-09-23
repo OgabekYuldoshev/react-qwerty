@@ -1,8 +1,7 @@
 .base {
     display: flex;
     flex-direction: column;
-    padding: 1em 2em;
-    background: rgb(var(--background));
+    background: var(--background);
 
     &Editor {
         display: block;

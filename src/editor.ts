@@ -1,3 +1,3 @@
 import "./assets/main.scss";
 
-export { default as ReactQwerty } from "./atoms/provider";
+export { default as ReactQwerty } from "./components/provider";

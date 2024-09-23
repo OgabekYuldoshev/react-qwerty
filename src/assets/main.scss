@@ -20,6 +20,8 @@
     color: rgb(var(--color));
 
     .tiptap {
+        padding: 1em 2em;
+
         &:focus {
             outline: none;
         }
