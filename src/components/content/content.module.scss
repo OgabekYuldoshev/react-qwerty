@@ -1,7 +1,7 @@
 .base {
     display: flex;
     flex-direction: column;
-    background: var(--background);
+    background: rgb(var(--background));
 
     &Editor {
         display: block;

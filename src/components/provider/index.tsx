@@ -5,18 +5,18 @@ import { Content } from "../content";
 import { Toolbar } from "../toolbar";
 
 type ReactQwertyProps = {
-  mode?: "dark" | "light";
+	mode?: "dark" | "light";
 };
 
 const Provider = ({ mode }: ReactQwertyProps) => {
-  return (
-    <EditorProvider autofocus extensions={defaultExtension}>
-      <Container mode={mode}>
-        <Toolbar />
-        <Content />
-      </Container>
-    </EditorProvider>
-  );
+	return (
+		<EditorProvider autofocus extensions={defaultExtension}>
+			<Container mode={mode}>
+				<Toolbar />
+				<Content />
+			</Container>
+		</EditorProvider>
+	);
 };
 
 export default Provider;

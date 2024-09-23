@@ -4,17 +4,17 @@ import styles from "./content.module.scss";
 import clsx from "clsx";
 
 interface Props {
-  pageType: "full" | "page";
+	pageType: "full" | "page";
 }
 export const Content = ({ pageType = "page" }: Props) => {
-  const { editor } = useEditorContext();
+	const { editor } = useEditorContext();
 
-  return (
-    <div className={styles.base}>
-      <EditorContent
-        editor={editor}
-        className={clsx(styles.baseEditor, styles[`baseEditor--${pageType}`])}
-      />
-    </div>
-  );
+	return (
+		<div className={styles.base}>
+			<EditorContent
+				editor={editor}
+				className={clsx(styles.baseEditor, styles[`baseEditor--${pageType}`])}
+			/>
+		</div>
+	);
 };
