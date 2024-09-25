@@ -1,3 +1,4 @@
 import "./assets/main.scss";
 
-export { default as ReactQwerty } from "./components/provider";
+export * from "./extensions";
+export { default as ReactQwertyEditor } from "./components/provider";

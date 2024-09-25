@@ -3,7 +3,7 @@ import "./assets/index.scss";
 import { StrictMode, useState } from "react";
 import { createRoot } from "react-dom/client";
 
-import { ReactQwerty } from "./editor";
+import { HightlightExtension, ReactQwertyEditor } from "./editor";
 function App() {
 	const [mode, setMode] = useState<"light" | "dark">("light");
 	return (
@@ -16,7 +16,7 @@ function App() {
 			>
 				Toggle Theme
 			</button>
-			<ReactQwerty mode={mode} />
+			<ReactQwertyEditor mode={mode} extentions={[HightlightExtension]} />
 		</div>
 	);
 }

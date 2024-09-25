@@ -40,6 +40,7 @@
     "@radix-ui/react-popover": "^1.1.1",
     "@radix-ui/react-slot": "^1.1.0",
     "@tiptap/core": "^2.7.2",
+    "@tiptap/extension-highlight": "^2.7.2",
     "@tiptap/extension-placeholder": "^2.7.2",
     "@tiptap/extension-table": "^2.7.2",
     "@tiptap/extension-table-cell": "^2.7.2",

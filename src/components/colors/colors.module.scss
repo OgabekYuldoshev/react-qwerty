@@ -1,0 +1,12 @@
+.base {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 4px;
+}
+
+.color {
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 4px;
+    cursor: pointer;
+}

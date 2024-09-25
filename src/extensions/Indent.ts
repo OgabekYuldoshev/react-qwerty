@@ -1,8 +1,8 @@
 import { Extension } from "@tiptap/core";
 import type { Command, Editor } from "@tiptap/core";
+import { isList } from "@tiptap/core";
 import type { Transaction } from "@tiptap/pm/state";
 import { AllSelection, TextSelection } from "@tiptap/pm/state";
-import { isList } from "@tiptap/core";
 
 export enum IndentProps {
 	max = 7,

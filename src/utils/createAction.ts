@@ -1,12 +1,12 @@
 import type { Editor } from "@tiptap/react";
 
+
 export type ActionOption = {
-	key: string;
 	spacer?: boolean;
 	render({ editor }: { editor: Editor }): JSX.Element;
 };
 export function createAction({ spacer = false, ...options }: ActionOption) {
-	const action = Object.assign(
+	const item = Object.assign(
 		{},
 		{
 			spacer,
@@ -14,5 +14,7 @@ export function createAction({ spacer = false, ...options }: ActionOption) {
 		},
 	);
 
-	return action;
+	item.render = item.render.bind(item);
+
+	return item;
 }

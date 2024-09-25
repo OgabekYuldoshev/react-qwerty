@@ -8,13 +8,14 @@
         border-radius: 6px;
         padding: 0.5em;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        z-index: 100;
 
         &[data-state=open] {
-            animation: popover-open .1s ease-in-out;
+            animation: popover-open .3s ease-in-out;
         }
 
         &[data-state=closed] {
-            animation: popover-closed .1s ease-in-out;
+            animation: popover-closed .3s ease-in-out;
         }
     }
 }
